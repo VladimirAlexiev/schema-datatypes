@@ -7,6 +7,44 @@
   abstract = {Over a decade after RDF has been published as a W3C recommendation, publishing open and machine-readable content on the Web has recently received a lot more attention, including from corporate and governmental bodies; notably thanks to the Linked Open Data community, there now exists a rich vein of heterogeneous RDF data published on the Web (the so-called \textbackslash Web of Data") accessible to all. However, RDF publishers are prone to making errors which compromise the e ectiveness of applications leveraging the resulting data. In this paper, we discuss common errors in RDF publishing, their consequences for applications, along with possible publisher-oriented approaches to improve the quality of structured, machine-readable and open data on the We}
 }
 
+@inproceedings{alexanderbrinkmannImprovingHierarchicalProduct2021,
+  title = {Improving {{Hierarchical Product Classification}} Using {{Domain-specific Language Modelling}}},
+  booktitle = {Knowledge {{Management}} in E-{{Commerce}} Workshop, Held in Conjunction with {{The Web Conference}} 2021},
+  author = {{Alexander Brinkmann} and {Christian Bizer}},
+  date = {2021},
+  url = {https://www.uni-mannheim.de/media/Einrichtungen/dws/Files_Research/Web-based_Systems/pub/Brinkmann-Bizer-Improving_Hierarchical_Product_Classification_using_domain_specific_laguage_modelling-PKG4Ecommerce2021.pdf},
+  abstract = {In order to deliver a coherent user experience, product aggregators such as market places or price portals integrate product offers from many web shops into a single product categorization hierarchy. Recently, transformer models have shown remarkable performance on various NLP tasks. These models are pre-trained on huge crossdomain text corpora using self-supervised learning and fine-tuned afterwards for specific downstream tasks. Research from other application domains indicates that additional self-supervised pretraining using domain-specific text corpora can further increase downstream performance without requiring additional task-specific training data.  In this paper, we first show that transformers outperform a more traditional fastText-based classification technique on the task of assigning product offers from different web shops into a product hierarchy. Afterwards, we investigate whether it is possible to improve the performance of the transformer models by performing additional self-supervised pre-training using different corpora of product offers, which were extracted from the Common Crawl.  Our experiments show that by using large numbers of related product offers for masked language modelling, it is possible to increase the performance of the transformer models by 1.22\% in wF1 and 1.36\% in hF1 reaching a performance of nearly 89\% wF1.},
+  keywords = {Hierarchical Classification,language-modelling,Neural Networks,product-categorization,Self-supervised Learning,transformer-models}
+}
+
+@report{bizerWebDataCommons2019,
+  type = {dataset},
+  title = {Web {{Data Commons Training}} and {{Test Sets}} for {{Large-Scale Product Matching}} - {{Version}} 2.0},
+  author = {Bizer, Christian and Primpeli, Anna and Peeters, Ralph},
+  date = {2019},
+  institution = {{Mannheim University Library}},
+  doi = {10.7801/351},
+  url = {https://madata.bib.uni-mannheim.de/351},
+  urldate = {2023-02-16},
+  abstract = {Many e-shops have started to mark-up product data within their HTML pages using the schema.org vocabulary. The Web Data Commons project regularly extracts such data from the Common Crawl, a large public web crawl. The Web Data Commons Training and Test Sets for Large-Scale Product Matching contain product offers from different e-shops in the form of binary product pairs (with corresponding label “match” or “no match”) for four product categories, computers, cameras, watches and shoes. In order to support the evaluation of machine learning-based matching methods, the data is split into training, validation and test sets. For each product category, we provide training sets in four different sizes (2.000-70.000 pairs). Furthermore there are sets of ids for each training set for a possible validation split (stratified random draw) available. The test set for each product category consists of 1.100 product pairs. The labels of the test sets were manually checked while those of the training sets were derived using shared product identifiers from the Web weak supervision. The data stems from the WDC Product Data Corpus for Large-Scale Product Matching - Version 2.0 which consists of 26 million product offers originating from 79 thousand websites. For more information and download links for the corpus itself, please follow the links below.},
+  keywords = {e-commerce,entity matching,identity resolution,product matching,record linkage,schema.org}
+}
+
+@thesis{holzknechtEnablingDomainspecificValidation2018,
+  type = {mathesis},
+  title = {Enabling Domain-Specific Validation of Schema.Org Annotations},
+  author = {Holzknecht, Omar J. A.},
+  date = {2018-11-28},
+  institution = {{Semantic Technology Institute Innsbruck}},
+  location = {{Innsbruck}},
+  url = {http://diglib.uibk.ac.at/ulbtirolhs/3042645},
+  urldate = {2023-02-16},
+  abstract = {Schema.org has become the standard vocabulary for publishing structured data on the World Wide Web. Unfortunately, the flexible data model of Schema.org and its pragmatic view of conformance result in uncertainty for the publishers and consumers of structured data, which has consequently led to the fact that Schema.org is broadly used, but largely in an incomplete and wrong way. In this thesis, an approach is elaborated to solve this problem through the introduction of semantic templates, which the author names "domain specifications". Domain specifications are formalized, machine-readable, and structured documents that define syntactic and semantic, domain-specific constraints for Schema.org annotations. This thesis also specifies a validation algorithm that verifies if a Schema.org annotation is in compliance with the constraints defined by a domain specification. The concepts proposed in this thesis serve the maximal goal to enable the domain-specific validation of Schema.org annotations and consequently increase the quality of structured data on the Web.},
+  langid = {english},
+  keywords = {/have},
+  annotation = {URN: urn:nbn:at:at-ubi:1-32472}
+}
+
 @inproceedings{keilProblemXSDBinary2022,
   title = {The {{Problem}} with {{XSD Binary Floating Point Datatypes}} in {{RDF}}},
   booktitle = {European {{Semantic Web Conference}} ({{ESWC}} 2022)},
@@ -25,3 +63,256 @@
   isbn = {978-3-031-06980-2 978-3-031-06981-9},
   langid = {english}
 }
+
+@article{kejriwalEmpiricalBestPractices2021,
+  title = {Empirical {{Best Practices On Using Product-Specific Schema}}.Org},
+  author = {Kejriwal, Mayank and Selvam, Ravi Kiran and Ni, Chien-Chun and Torzec, Nicolas},
+  date = {2021-05-18},
+  journaltitle = {Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume = {35},
+  number = {17},
+  pages = {15452--15457},
+  issn = {2374-3468},
+  doi = {10.1609/aaai.v35i17.17816},
+  url = {https://ojs.aaai.org/index.php/AAAI/article/view/17816},
+  urldate = {2023-02-16},
+  abstract = {Schema.org has experienced high growth in recent years. Structured descriptions of products embedded in HTML pages are now not uncommon, especially on e-commerce websites. The Web Data Commons (WDC) project has extracted schema.org data at scale from webpages in the Common Crawl and made it available as an RDF `knowledge graph' at scale. The portion of this data that specifically describes products offers a golden opportunity for researchers and small companies to leverage it for analytics and downstream applications. Yet, because of the broad and expansive scope of  this data, it is not evident whether the data is usable in its raw form. In this paper, we do a detailed empirical study on the product-specific schema.org data made available by WDC. Rather than simple analysis, the goal of our study is to devise an empirically grounded set of best practices for using and consuming WDC product-specific schema.org data. Our studies reveal five best practices, each of which is justified by experimental data and analysis.},
+  issue = {17},
+  langid = {english},
+  keywords = {Best Practices,Big Data,Common Crawl,E-commerce,Markup,Schema.org,Web Data Commons}
+}
+
+@inproceedings{meuselHeuristicsFixingCommon2015,
+  title = {Heuristics for {{Fixing Common Errors}} in {{Deployed}} Schema.Org {{Microdata}}},
+  booktitle = {European {{Semantic Web Conference}}  ({{ESWC}} 2015)},
+  author = {Meusel, Robert and Paulheim, Heiko},
+  editor = {Gandon, Fabien and Sabou, Marta and Sack, Harald and d’ Amato, Claudia and Cudré-Mauroux, Philippe and Zimmermann, Antoine},
+  options = {useprefix=true},
+  date = {2015},
+  series = {Lecture {{Notes}} in {{Computer Science}}},
+  volume = {9088},
+  pages = {152--168},
+  publisher = {{Springer International Publishing}},
+  location = {{Cham}},
+  doi = {10.1007/978-3-319-18818-8_10},
+  url = {http://link.springer.com/10.1007/978-3-319-18818-8_10},
+  urldate = {2023-02-16},
+  abstract = {Being promoted by major search engines such as Google, Yahoo!, Bing, and Yandex, Microdata embedded in web pages, especially using schema.org, has become one of the most important markup languages for the Web. However, deployed Microdata is most often not free from errors, which limits its practical use. In this paper, we use the WebDataCommons corpus of Microdata extracted from more than 250  million web pages for a quantitative analysis of common mistakes in Microdata provision. Since it is unrealistic that data providers will provide clean and correct data, we discuss a set of heuristics that can be applied on the data consumer side to fix many of those mistakes in a post-processing step. We apply those heuristics to provide an improved knowledge base constructed from the raw Microdata extraction.},
+  isbn = {978-3-319-18817-1 978-3-319-18818-8},
+  langid = {english}
+}
+
+@article{meuselMoreAccurateStatistical2016,
+  title = {Towards {{More Accurate Statistical Profiling}} of {{Deployed}} Schema.Org {{Microdata}}},
+  author = {Meusel, Robert and Ritze, Dominique and Paulheim, Heiko},
+  date = {2016-10-25},
+  journaltitle = {Journal of Data and Information Quality},
+  shortjournal = {J. Data and Information Quality},
+  volume = {8},
+  number = {1},
+  pages = {3:1--3:31},
+  issn = {1936-1955},
+  doi = {10.1145/2992788},
+  url = {https://doi.org/10.1145/2992788},
+  urldate = {2023-02-16},
+  abstract = {Being promoted by major search engines such as Google, Yahoo!, Bing, and Yandex, Microdata embedded in web pages, especially using schema.org, has become one of the most important markup languages for the Web. However, deployed Microdata is very often not free from errors, which makes it difficult to estimate the data volume and create an accurate data profile. In addition, as the usage of global identifiers is not common, the real number of entities described by this format in the Web is hard to assess. In this article, we discuss how the subsequent application of data cleaning steps, such as duplicate detection and correction of common schema-based errors, leads to a more realistic view on the data, step by step. The cleaning steps applied include both heuristics for fixing errors as well as means to perform duplicate detection and duplicate elimination. Using the Web Data Commons Microdata corpus, we show that applying such quality improvement methods can essentially change the statistical profile of the dataset and lead to different estimates of both the number of entities as well as the class distribution within the data.},
+  keywords = {data cleaning,data integration,Microdata,schema.org}
+}
+
+@inproceedings{meuselWebDataCommonsMicrodataRDFa2014,
+  title = {The {{WebDataCommons Microdata}}, {{RDFa}} and {{Microformat Dataset Series}}},
+  booktitle = {International {{Semantic Web Conference}} ({{ISWC}} 2014)},
+  author = {Meusel, Robert and Petrovski, Petar and Bizer, Christian},
+  editor = {Mika, Peter and Tudorache, Tania and Bernstein, Abraham and Welty, Chris and Knoblock, Craig and Vrandečić, Denny and Groth, Paul and Noy, Natasha and Janowicz, Krzysztof and Goble, Carole},
+  date = {2014},
+  volume = {8796},
+  pages = {277--292},
+  publisher = {{Springer International Publishing}},
+  location = {{Cham}},
+  doi = {10.1007/978-3-319-11964-9_18},
+  url = {http://link.springer.com/10.1007/978-3-319-11964-9_18},
+  urldate = {2023-02-16},
+  abstract = {In order to support web applications to understand the content of HTML pages an increasing number of websites have started to annotate structured data within their pages using markup formats such as Microdata, RDFa, Microformats. The annotations are used by Google, Yahoo!, Yandex, Bing and Facebook to enrich search results and to display entity descriptions within their applications. In this paper, we present a series of publicly accessible Microdata, RDFa, Microformats datasets that we have extracted from three large web corpora dating from 2010, 2012 and 2013. Altogether, the datasets consist of almost 30 billion RDF quads. The most recent of the datasets contains amongst other data over 211 million product descriptions, 54 million reviews and 125 million postal addresses originating from thousands of websites. The availability of the datasets lays the foundation for further research on integrating and cleansing the data as well as for exploring its utility within different application contexts. As the dataset series covers four years, it can also be used to analyze the evolution of the adoption of the markup formats.},
+  isbn = {978-3-319-11963-2 978-3-319-11964-9},
+  langid = {english}
+}
+
+@inproceedings{meuselWebscaleStudyAdoption2015,
+  title = {A {{Web-scale Study}} of the {{Adoption}} and {{Evolution}} of the Schema.Org {{Vocabulary}} over {{Time}}},
+  booktitle = {Proceedings of the 5th {{International Conference}} on {{Web Intelligence}}, {{Mining}} and {{Semantics}}},
+  author = {Meusel, Robert and Bizer, Christian and Paulheim, Heiko},
+  date = {2015-07-13},
+  pages = {1--11},
+  publisher = {{ACM}},
+  location = {{Larnaca Cyprus}},
+  doi = {10.1145/2797115.2797124},
+  url = {https://dl.acm.org/doi/10.1145/2797115.2797124},
+  urldate = {2023-02-16},
+  abstract = {Promoted by major search engines, schema.org has become a widely adopted standard for marking up structured data in HTML web pages. In this paper, we use a series of large-scale Web crawls to analyze the evolution and adoption of schema.org over time. The availability of data from different points in time for both the schema and the websites deploying data allows for a new kind of empirical analysis of standards adoption, which has not been possible before. To conduct our analysis, we compare different versions of the schema.org vocabulary to the data that was deployed on hundreds of thousands of Web pages at different points in time. We measure both top-down adoption (i.e., the extent to which changes in the schema are adopted by data providers) as well as bottom-up evolution (i.e., the extent to which the actually deployed data drives changes in the schema). Our empirical analysis shows that both processes can be observed.},
+  eventtitle = {{{WIMS}} '15: 5th {{International Conference}} on {{Web Intelligence}}, {{Mining}} and {{Semantics}}},
+  isbn = {978-1-4503-3293-4},
+  langid = {english}
+}
+
+@inproceedings{mikaMetadataStatisticsLarge2012,
+  title = {Metadata {{Statistics}} for a {{Large Web Corpus}}},
+  author = {Mika, P. and Potter, Tim},
+  date = {2012},
+  url = {https://ceur-ws.org/Vol-937/ldow2012-inv-paper-1.pdf},
+  urldate = {2023-02-16},
+  abstract = {We provide an analysis of the adoption of metadata standards on the Web based a large crawl of the Web. In particular, we look at what forms of syntax and vocabularies publishers are using to mark up data inside HTML pages. We also describe the process that we have followed and the difficulties involved in web data extraction.},
+  eventtitle = {Linked {{Data}} on the {{Web}} ({{LDOW}} 2012)}
+}
+
+@inproceedings{muhleisenWebDataCommons2012,
+  title = {Web {{Data Commons}} - {{Extracting}} Structured Data from Two Large Web Corpora},
+  booktitle = {{{CEUR Workshop Proceedings}}},
+  author = {Mühleisen, Hannes and Bizer, Christian},
+  editor = {Bizer, Christian and Heath, Tom and Berners-Lee, Tim and Hausenblas, Michael},
+  date = {2012},
+  volume = {937},
+  pages = {1--4},
+  publisher = {{RWTH Aachen}},
+  location = {{Aachen, Germany}},
+  issn = {1613-0073},
+  url = {http://ceur-ws.org/Vol-937/ldow2012-inv-paper-2.pdf},
+  urldate = {2023-02-16},
+  abstract = {More and more websites embed structured data describing for instance products, people, organizations, places, events, resumes, and cooking recipes into their HTML pages using encoding standards such as Microformats, Microdatas and RDFa. The Web Data Commons project extracts all Microformat, Microdata and RDFa data from the Common Crawl web corpus, the largest and most up-todata web corpus that is currently available to the public, and provides the extracted data for download in the form of RDF-quads. In this paper, we give an overview of the project and present statistics about the popularity of the different encoding standards as well as the kinds of data that are published using each format},
+  eventtitle = {Linked {{Data}} on the {{Web}} ({{LDOW}} 2012)}
+}
+
+@inproceedings{mynarzValidatorPreviewJobPosting2014,
+  title = {Validator and {{Preview}} for the {{JobPosting Data Model}} of {{Schema}}.Org},
+  booktitle = {International {{Conference}} on {{Electronic Commerce}} and {{Web Technologies}} ({{EC-Web}} 2014)},
+  author = {Mynarz, Jindřich},
+  editor = {Hepp, Martin and Hoffner, Yigal},
+  date = {2014},
+  series = {Lecture {{Notes}} in {{Business Information Processing}}},
+  volume = {188},
+  pages = {58--63},
+  publisher = {{Springer International Publishing}},
+  location = {{Cham}},
+  doi = {10.1007/978-3-319-10491-1_6},
+  url = {http://link.springer.com/10.1007/978-3-319-10491-1_6},
+  urldate = {2023-02-16},
+  abstract = {The paper describes a tool for validating and previewing instances of Schema.org JobPosting described in structured data markup embedded in web pages. The validator and preview was developed to assist users of Schema.org to produce data of better quality. The paper discusses the implementation of the tool and design of its validation rules based on SPARQL 1.1. Results of experimental validation of a job posting corpus harvested from the Web are presented. The validation’s findings indicate that publishers of Schema.org JobPosting data often misunderstand precedence rules employed by markup parsers and ignore case-sensitivity of vocabulary names.},
+  isbn = {978-3-319-10490-4 978-3-319-10491-1},
+  langid = {english}
+}
+
+@article{namHowOrganizationsPublish2018,
+  title = {How {{Do Organizations Publish Semantic Markup}}? {{Three Case Studies Using Public Schema}}.Org {{Crawls}}},
+  shorttitle = {How {{Do Organizations Publish Semantic Markup}}?},
+  author = {Nam, Daye and Kejriwal, Mayank},
+  date = {2018-06},
+  journaltitle = {Computer},
+  volume = {51},
+  number = {6},
+  pages = {42--51},
+  issn = {1558-0814},
+  doi = {10.1109/MC.2018.2701635},
+  abstract = {Jointly launched in mid-2011 by major search engines like Google and Bing, Schema.org is designed to facilitate structured and knowledge graph–centric search applications on the Web. The Web Data Commons project has crawled increasing amounts of Schema.org data in recent years, providing a golden opportunity for socio-technological data studies that consider the semantics of content. The authors present empirical studies of organizations in three economic sectors that expose semantically linked Schema.org annotations.},
+  eventtitle = {Computer},
+  keywords = {/have,blank nodes,case study,cross-sectional analysis,data analysis,entity resolution,graph theory,graphlets,Internet/Web technologies,Linked Open Data,longitudinal analysis,network science,Network theory (graphs),Organizations,pay-level domain,PLD,power law,pseudo-identifier,RDF,Resource description framework,Resource Description Framework,Schema.org,semantic markup,Semantic Web,Semantics,structured data,tripartite network,Uniform resource locators,WDC,Web Data Commons,Web Science}
+}
+
+@inproceedings{paulheimWhatAdoptionSchema2015,
+  title = {What the {{Adoption}} of Schema.Org {{Tells About Linked Open Data}}},
+  booktitle = {{{CEUR Workshop Proceedings}}},
+  author = {Paulheim, Heiko},
+  editor = {Berendt, Bettina},
+  date = {2015},
+  volume = {1362},
+  pages = {85--90},
+  publisher = {{RWTH Aachen}},
+  location = {{Aachen, Germany}},
+  issn = {1613-0073},
+  url = {http://ceur-ws.org/Vol-1362/PROFILES2015_paper6.pdf},
+  urldate = {2023-02-16},
+  abstract = {schema.org is a common data markup schema, pushed by large search engine providers such as Google, Yahoo!, and Bing. To date, a few hundred thousand web site providers adopt schema.org annotations embedded in their web pages via Microdata. While Microdata and Linked Open Data are not 100\% the same, there are some commonalities which make a joint analysis of the two valuable and reasonable. Profiling this data reveals interesting insights in the ways a schema is used (and also misused) on a large scale. Furthermore, adding a temporal dimension to the analysis can make the interaction between the adoption and the evolution of the standard visible. In this paper, we discuss our group’s efforts to profile the corpus of deployed schema.org data, and suggest which lessons learned from that endeavour can be transferred to the Linked Open Data community.},
+  eventtitle = {2nd {{International Workshop}} on {{Dataset PROFIling}} and {{fEderated Search}} for {{Linked Data}} ({{PROFILES}} '15)}
+}
+
+@inproceedings{peetersUsingSchemaOrg2020,
+  title = {Using Schema.Org Annotations for Training and Maintaining Product Matchers},
+  author = {Peeters, Ralph and Primpeli, Anna and Wichtlhuber, Benedikt and Bizer, Christian},
+  editor = {Chbeir, Richard},
+  date = {2020},
+  pages = {195--204},
+  publisher = {{ACM}},
+  location = {{New York, NY}},
+  doi = {10.1145/3405962.3405964},
+  url = {https://dl.acm.org/doi/10.1145/3405962.3405964},
+  urldate = {2023-02-16},
+  abstract = {Product matching is a central task within e-commerce applications such as price comparison portals and online market places. State-of-the-art product matching methods achieve F1 scores above 0.90 using deep learning techniques combined with huge amounts of training data (e.g {$>$} 100K pairs of offers). Gathering and maintaining such large training corpora is costly, as it implies labeling pairs of offers as matches or non-matches. Acquiring the ability to be good at product matching thus means a major investment for an e-commerce company. This paper shows that the manual labeling of training data for product matching can be replaced by relying exclusively on schema.org annotations gathered from the public Web. We show that using only schema.org data for training, we are able to achieve F1 scores between 0.92 and 0.95 depending on the product category. As new products appear everyday, it is important that matching models can be maintained with justifiable effort. In order to give practical advice on how to maintain matching models, we compare the performance of deep learning and traditional matching models on unseen products and experiment with different fine-tuning and re-training strategies for model maintenance, again using only schema.org annotations as training data. Finally, as using the public Web as distant supervision carries inherent noise, we evaluate deep learning and traditional matching models with regards to their label-noise resistance and show that deep learning is able to deal with the amounts of identifier-noise found in schema.org annotations.},
+  eventtitle = {Web {{Intelligence}}, {{Mining}} and {{Semantics}} ({{WIMS}} 2020)},
+  isbn = {978-1-4503-7542-9}
+}
+
+@inproceedings{primpeliWDCTrainingDataset2019,
+  title = {The {{WDC}} Training Dataset and Gold Standard for Large-Scale Product Matching},
+  author = {Primpeli, Anna and Peeters, Ralph and Bizer, Christian},
+  editor = {Liu, Ling},
+  date = {2019},
+  pages = {381--386},
+  publisher = {{ACM}},
+  location = {{New York, NY, USA}},
+  doi = {10.1145/3308560.3316609},
+  url = {https://dl.acm.org/citation.cfm?doid=3308560.3316609},
+  urldate = {2023-02-16},
+  abstract = {A current research question in the area of entity resolution (also called link discovery or duplicate detection) is whether and in which cases embeddings and deep neural network based matching methods outperform traditional symbolic matching methods. The problem with answering this question is that deep learning based matchers need large amounts of training data. The entity resolution benchmark datasets that are currently available to the public are too small to properly evaluate this new family of matching methods. The WDC Training Dataset for Large-Scale Product Matching fills this gap. The English language subset of the training dataset consists of 20 million pairs of offers referring to the same products. The offers were extracted from 43 thousand e-shops which provide schema.org annotations including some form of product ID such as a GTIN or MPN. We also created a gold standard by manually verifying 2200 pairs of offers belonging to four product categories. Using a subset of our training dataset together with this gold standard, we are able to publicly replicate the recent result of Mudgal et al. that embeddings and deep neural network based matching methods outperform traditional symbolic matching methods on less structured data.},
+  eventtitle = {Workshop on E-{{Commerce}} and {{NLP}} at {{WWW}} 2019},
+  isbn = {978-1-4503-6675-5},
+  keywords = {deep matching,embeddings,entity resolution,evaluation data,product matching,schema.org annotations}
+}
+
+@inproceedings{simsekDomainSpecificCustomizationSchema2020,
+  title = {Domain-{{Specific Customization}} of {{Schema}}.Org {{Based}} on {{SHACL}}},
+  booktitle = {International {{Semantic Web Conference}}  ({{ISWC}} 2020)},
+  author = {Şimşek, Umutcan and Angele, Kevin and Kärle, Elias and Panasiuk, Oleksandra and Fensel, Dieter},
+  editor = {Pan, Jeff Z. and Tamma, Valentina and d’ Amato, Claudia and Janowicz, Krzysztof and Fu, Bo and Polleres, Axel and Seneviratne, Oshani and Kagal, Lalana},
+  options = {useprefix=true},
+  date = {2020},
+  series = {Lecture {{Notes}} in {{Computer Science}}},
+  volume = {12507},
+  pages = {585--600},
+  publisher = {{Springer International Publishing}},
+  location = {{Cham}},
+  doi = {10.1007/978-3-030-62466-8_36},
+  url = {https://link.springer.com/10.1007/978-3-030-62466-8_36},
+  abstract = {Schema.org is a widely adopted vocabulary for semantic annotation of web resources. However, its generic nature makes it complicated for publishers to pick the right types and properties for a specific domain. In this paper, we propose an approach, a domain specification process that generates domain-specific patterns by applying operators implemented in SHACL syntax to the schema.org vocabulary. These patterns can support annotation generation and verification processes for specific domains. We provide tooling for the generation of such patterns and evaluate the usability of both domain-specific patterns and the tools with use cases in the tourism domain.},
+  isbn = {978-3-030-62465-1 978-3-030-62466-8},
+  langid = {english},
+  keywords = {Domain-specific patterns,Schema.org,Semantic annotation,SHACL}
+}
+
+@inproceedings{simsekDomainSpecificSemantic2017,
+  title = {Domain {{Specific Semantic Validation}} of {{Schema}}.Org {{Annotations}}},
+  booktitle = {{{PSI}} 2017},
+  author = {Şimşek, Umutcan and Kärle, Elias and Holzknecht, Omar and Fensel, Dieter},
+  date = {2017-06-20},
+  doi = {10.48550/arXiv.1706.06384},
+  url = {https://www.researchgate.net/publication/317710611_Domain_Specific_Semantic_Validation_of_Schemaorg_Annotations},
+  abstract = {Since its unveiling in 2011, schema.org has become the de facto standard for publishing semantically described structured data on the web, typically in the form of web page annotations. The increasing adoption of schema.org facilitates the growth of the web of data, as well as the development of automated agents that operate on this data. Schema.org is a large heterogeneous vocabulary that covers many domains. This is obviously not a bug, but a feature, since schema.org aims to describe almost everything on the web, and the web is huge. However, the heterogeneity of schema.org may cause a side effect, which is the challenge of picking the right classes and properties for an annotation in a certain domain, as well as keeping the annotation semantically consistent. In this work, we introduce our rule based approach and an implementation of it for validating schema.org annotations from two aspects: (a) the completeness of the annotations in terms of a specified domain, (b) the semantic consistency of the values based on pre-defined rules. We demonstrate our approach in the tourism domain.}
+}
+
+@inproceedings{stolzCrawlingWebStructured2015,
+  title = {Towards {{Crawling}} the {{Web}} for {{Structured Data}}: {{Pitfalls}} of {{Common Crawl}} for {{E-Commerce}}},
+  shorttitle = {Towards {{Crawling}} the {{Web}} for {{Structured Data}}},
+  booktitle = {Proceedings of the 6th {{International Workshop}} on {{Consuming Linked Data}} ({{COLD}} 2015)},
+  author = {Stolz, Alex and Hepp, Martin},
+  editor = {Hartig, Olaf and Sequeda, Juan and Hogan, Aidan},
+  date = {2015-10},
+  series = {{{CEUR Workshop Proceedings}}},
+  volume = {1426},
+  publisher = {{CEUR}},
+  location = {{Bethlehem, Pennsylvania}},
+  issn = {1613-0073},
+  url = {https://ceur-ws.org/Vol-1426/#paper-04},
+  urldate = {2023-02-16},
+  abstract = {In the recent years, the publication of structured data inside HTML content of Web sites has become a mainstream feature of com- mercial Web sites. In particular, e-commerce sites have started to add RDFa or Microdata markup based on schema.org and GoodRelations vo- cabularies. For many potential usages of this huge body of data, we need to crawl the sites and extract the data from the markup. Unfortunately, a lot of markup resides in very deep branches of the sites, namely in the product detail pages. Such pages are difficult to crawl because of their sheer number and because they often lack links pointing to them. In this paper, we present a small-sized experiment where we compare the Web pages from a popular Web crawler, Common Crawl, with the URLs in sitemap files of respective Web sites. We show that Common Crawl lacks a major share of the product detail pages that hold a significant part of the data, and that an approach as simple as a sitemap crawl yields much more product pages. Based on our findings, we conclude that a rethinking of state-of-the-art crawling strategies is necessary in order to cater for e-commerce scenarios.},
+  eventtitle = {Consuming {{Linked Data}}},
+  langid = {english}
+}
+
+@preamble{ "\ifdefined\DeclarePrefChars\DeclarePrefChars{'’-}\else\fi " }
